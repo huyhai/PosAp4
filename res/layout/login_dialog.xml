@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlBig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login" >
+
+    <RelativeLayout
+        android:id="@+id/rlAll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlTop1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#75cdf3" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="User Log-in"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/btnCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/company_profile"
+                android:text="Company Profile"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btnCompanyName"
+                android:background="@drawable/company_profile"
+                android:text="Back"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rlTop"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rlUser"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <GridView
+                    android:id="@+id/gvUser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:listSelector="@color/milky"
+                    android:numColumns="3"
+                    android:scrollbars="vertical"
+                    android:verticalSpacing="1dp" >
+                </GridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lrVV"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:id="@+id/imgCompanyLogo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                  android:layout_marginTop="10dp"
+                    android:background="@drawable/user_login_company_photo" />
+
+                <EditText
+                    android:id="@+id/edInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgCompanyLogo"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Input Cash"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  android:layout_marginTop="300dp"
+                  android:layout_centerHorizontal="true"
+                    android:background="@drawable/user_profile_confirm"
+                    android:text="Confirm"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnOk"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/user_profile_delete"
+                    android:text="Delete"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/rlRes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/imgAvartar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/add_photo"
+                        android:scaleType="fitXY" />
+
+                    <EditText
+                        android:id="@+id/edUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgAvartar"
+                        android:layout_centerHorizontal="true"
+                        android:maxLines="1"
+                        android:text="" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

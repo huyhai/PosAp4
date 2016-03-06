@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout
+                    android:id="@+id/rlShow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/rltBillNo"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tvtBill"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="Bill No."
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/rltCounter"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" 
+                        
+                        android:layout_toRightOf="@+id/rltBillNo">
+
+                        <TextView
+                            android:id="@+id/tvtCounter"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="Counter"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/rltClose"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" 
+                        
+                        android:layout_toRightOf="@+id/rltCounter">
+
+                        <TextView
+                            android:id="@+id/tvtClose"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="Close Session"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rltTotalAmount"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" 
+                        
+                        android:layout_toRightOf="@+id/rltClose">
+
+                        <TextView
+                            android:id="@+id/tvtTotalAmount"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="Total Amount"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/rltCash"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" 
+                        
+                        android:layout_toRightOf="@+id/rltTotalAmount">
+
+                        <TextView
+                            android:id="@+id/tvtCash"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="Cash"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/rltCard"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" 
+                        
+                        android:layout_toRightOf="@+id/rltCash">
+
+                        <TextView
+                            android:id="@+id/tvtCard"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="Card"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+					<LinearLayout
+                        android:id="@+id/rltGST"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" 
+                        
+                        android:layout_toRightOf="@+id/rltCard">
+
+                        <TextView
+                            android:id="@+id/tvtGST"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="GST"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+                   <LinearLayout
+                        android:id="@+id/rltUser"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical" 
+                        
+                        android:layout_toRightOf="@+id/rltGST">
+
+                        <TextView
+                            android:id="@+id/tvtUser"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/white"
+                            android:text="User"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        
+                    </LinearLayout>
+                    
+                        
+                  
+                        
+
+                        
+                    
+
+                    
+                </RelativeLayout>
+
+</RelativeLayout>
